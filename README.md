@@ -23,10 +23,13 @@ En el caso de **_ id :null** se agrupa a toda la colección entera, esto es, a t
 
 ## :pushpin: Reto 1. Agrupamientos. 
 - Con base en el ejemplo 1, modifica el agrupamiento para que muestre el costo promedio por habitación por país de las propiedades de tipo casa. El ejercicio 1 visto en la sesión fue el siguiente: 
-- Para ejemplificar el concepto de agrupamiento, buscaremos el costo promedio de una habitación de tipo casa, continuaremos usando la base de datos `sample_airbnb.listingsAndReviews`:
+- Para ejemplificar el concepto de agrupamiento, buscaremos el costo promedio de una habitación de tipo casa, continuaremos usando la base de datos `sample_airbnb.listingsAndReviews`.
 
-**:exclamation: NOTA** Al realizar operaciones aritméticas es importante que si estamos dividiendo nos aseguremos de **NO** operar con documentos cuyo valor sea cero.  
-
+**:exclamation: NOTA** Al realizar operaciones aritméticas es importante que si estamos dividiendo nos aseguremos de **NO** operar con documentos cuyo valor sea cero. 
+#### Camino largo ejercicio 1 solución al reto costo recámara-país.
+![imagen](imagenes/costo_recamara_largo.png)
+#### Con el uso de $avg (Camino corto).
+![imagen](imagenes/costo_recamara_corto.png)
 ## :pushpin: Reto 2. Asociación de colecciones.
 Mientras que en MySQL contábamos con la primitiva JOIN, en el caso de MongoDB se tiene **$lookUp** el cual es análogo a utilizar un **LEFT JOIN** en MySQL.
 
