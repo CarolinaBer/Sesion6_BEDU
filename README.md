@@ -8,5 +8,9 @@ En MongoDB es posible realizar agregaciones mediante **$group** el cual agrupa l
 **:exclamation: NOTA** Al realizar operaciones aritméticas es importante que si estamos dividiendo nos aseguremos de **NO** operar con documentos cuyo valor sea cero.  
 
 ## :pushpin: Reto 2. Asociación de colecciones.
+- Usando las colecciones `comments` y `users`, se requiere conocer el correo y contraseña de cada persona que realizó un comentario. Construye un pipeline que genere como resultado estos datos.
 
 ## :pushpin: Reto 3. Generación de vistas.
+1. Usando el pipeline generado en el Reto 2, genera la vista correspondiente.
+
+2. Para finalizar, elimina todas las vistas que generaste durante esta sesión. En la siguiente sesión, aprenderás a tener tu propio servidor para generar tus propias vistas. 
