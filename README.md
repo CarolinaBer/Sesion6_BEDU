@@ -16,7 +16,7 @@ De tal forma que una **agregación** nos permite aplicar una función a un *camp
 ```        
 https://docs.mongodb.com/manual/reference/operator/aggregation/group/
         
-Podemos pensar que el **acumulador** en MongoDB funge como las **funciones de agrupamiento** en el caso de MySQL.Recordando que para ello se hace uso de las variables categóricas al estas contar con un número determinado (finito) de opciones.
+Podemos pensar que el **acumulador** en MongoDB funge como las **funciones de agrupamiento** en el caso de MySQL.Recordando que para ello se hace uso de las variables categóricas al estas contar con un número determinado (finito) de opciones. en *field1* se hace referencia al nuevo campo en el cual se aplican los acumuladores correspondientes.
 
 En el caso de **_ id :null** se agrupa a toda la colección entera, esto es, a todos los documentos de la colección.
 
@@ -35,7 +35,7 @@ Mientras que en MySQL contábamos con la primitiva JOIN, en el caso de MongoDB s
 - Usando las colecciones `comments` y `users`, se requiere conocer el correo y contraseña de cada persona que realizó un comentario. Construye un pipeline que genere como resultado estos datos.
 
 ## :pushpin: Reto 3. Generación de vistas.
-De igual manera que con MySQL, en MongoDB es posible generar una colección virtual con los resultados de la cosulta, de tal forma que genera una colección con los resultados del *pipeline de una agregación*. Para generar una vista seleccionamos [Save] -> [Create a View] en la pestaña de `Aggregations` y le asignamos un nombre. 
+De igual manera que con MySQL, en MongoDB es posible generar una colección virtual con los resultados de la cosulta, de tal forma que genera una colección con los resultados del *pipeline de una agregación*. Para generar una vista seleccionamos [Save] -> [Create a View] en la pestaña de `Aggregations` y le asignamos un nombre. La salida de la última capa es la vista. **NOTA:** Es necesario utilizar **$project** al final si desamos ver nuestras colecciones y documentos en la pestaña de **Documents**.
 
 1. Usando el pipeline generado en el Reto 2, genera la vista correspondiente.
 
