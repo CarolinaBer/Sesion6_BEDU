@@ -27,9 +27,9 @@ En el caso de **_ id :null** se agrupa a toda la colección entera, esto es, a t
 
 **:exclamation: NOTA** Al realizar operaciones aritméticas es importante que si estamos dividiendo nos aseguremos de **NO** operar con documentos cuyo valor sea cero. 
 #### Camino largo ejercicio 1 solución al reto costo recámara-país.
-![imagen](imagenes/costo_recamara_largo.png)
+![imagen](imagenes/costo_recamara_pais_largo.png)
 #### Con el uso de $avg (Camino corto).
-![imagen](imagenes/costo_recamara_corto.png)
+![imagen](imagenes/costo_recamara_pais_corto.png)
 ## :pushpin: Reto 2. Asociación de colecciones.
 Mientras que en MySQL contábamos con la primitiva JOIN, en el caso de MongoDB se tiene **$lookUp** el cual es análogo a utilizar un **LEFT JOIN** en MySQL.
 
