@@ -1,7 +1,8 @@
 # Sesión 6 BEDU:Agregaciones MongoDB.
+
 En MongoDB es posible realizar agregaciones mediante **$group** el cual agrupa los documentos input mediante una expresión **_ id** especificada y por cada agrupamiento, el output es un documento. El campo **_ id** de cada documento output contiene el valor de $group. 
 
-De tal forma que una **agregación** nos permite aplicar una función a un *campo* de una *colección* en el caso de documentos de la misma forma que un **agrupamiento** lo hace con una *columna* en el caso de *tablas*. En **$group** necesitamos especificat el campo por el cual agrupar y posteriormente indicar uno por uno los acumuladores y a que columna o valor están aplicados. Se sigue el formato:
+De tal forma que una **agregación** nos permite aplicar una función a un *campo* de una *colección* en el caso de documentos de la misma forma que un **agrupamiento** lo hace con una *columna* en el caso de *tablas*. En **$group** necesitamos especificar el campo por el cual agrupar y posteriormente indicar uno por uno los acumuladores y a que columna o valor están aplicados. Mediante el formato siguiente:
 
 ```json
 {
@@ -15,7 +16,7 @@ De tal forma que una **agregación** nos permite aplicar una función a un *camp
 ```        
 https://docs.mongodb.com/manual/reference/operator/aggregation/group/
         
-Podemos pensar que el acumulador en MongoDB funge como las funciones de agrupamiento en el caso de MySQL.Recordando que para ello se hace uso de las variables categóricas al estas contar con un número determinado (finito) de opciones.
+Podemos pensar que el **acumulador** en MongoDB funge como las **funciones de agrupamiento** en el caso de MySQL.Recordando que para ello se hace uso de las variables categóricas al estas contar con un número determinado (finito) de opciones.
 
 En el caso de **_ id :null** se agrupa a toda la colección entera, esto es, a todos los documentos de la colección.
 
@@ -27,9 +28,15 @@ En el caso de **_ id :null** se agrupa a toda la colección entera, esto es, a t
 **:exclamation: NOTA** Al realizar operaciones aritméticas es importante que si estamos dividiendo nos aseguremos de **NO** operar con documentos cuyo valor sea cero.  
 
 ## :pushpin: Reto 2. Asociación de colecciones.
+Mientras que en MySQL contábamos con la primitiva JOIN, en el caso de MongoDB se tiene **$lookUp** el cual es análogo a utilizar un **LEFT JOIN** en MySQL. 
+
+
+
 - Usando las colecciones `comments` y `users`, se requiere conocer el correo y contraseña de cada persona que realizó un comentario. Construye un pipeline que genere como resultado estos datos.
 
 ## :pushpin: Reto 3. Generación de vistas.
+De igual manera que con MySQL, en MongoDB es posible generar una colección virtual con los resultados de la cosulta, de tal forma que genera una colección con los resultados del *pipeline de una agregación*. Para generar una vista seleccionamos [Save] -> [Create a View] en la pestaña de `Aggregations` y le asignamos un nombre. 
+
 1. Usando el pipeline generado en el Reto 2, genera la vista correspondiente.
 
 2. Para finalizar, elimina todas las vistas que generaste durante esta sesión. En la siguiente sesión, aprenderás a tener tu propio servidor para generar tus propias vistas. 
