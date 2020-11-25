@@ -7,3 +7,6 @@ En MongoDB es posible realizar agregaciones mediante **$group** el cual agrupa l
 
 **:exclamation: NOTA** Al realizar operaciones aritméticas es importante que si estamos dividiendo nos aseguremos de **NO** operar con documentos cuyo valor sea cero.  
 
+## :pushpin: Reto 2. Asociación de colecciones.
+
+## :pushpin: Reto 3. Generación de vistas.
