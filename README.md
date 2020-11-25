@@ -28,7 +28,9 @@ En el caso de **_ id :null** se agrupa a toda la colección entera, esto es, a t
 **:exclamation: NOTA** Al realizar operaciones aritméticas es importante que si estamos dividiendo nos aseguremos de **NO** operar con documentos cuyo valor sea cero.  
 
 ## :pushpin: Reto 2. Asociación de colecciones.
-Mientras que en MySQL contábamos con la primitiva JOIN, en el caso de MongoDB se tiene **$lookUp** el cual es análogo a utilizar un **LEFT JOIN** en MySQL. 
+Mientras que en MySQL contábamos con la primitiva JOIN, en el caso de MongoDB se tiene **$lookUp** el cual es análogo a utilizar un **LEFT JOIN** en MySQL.
+
+![imagen](imagenes/lookUp.png)
 
 
 
