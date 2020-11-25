@@ -35,6 +35,7 @@ Mientras que en MySQL contábamos con la primitiva JOIN, en el caso de MongoDB s
 
 ![imagen](imagenes/lookUp.png)
 
+Imagen consultada en: Morgan, A. (2015, 30 octubre). Joins and Other Aggregation Enhancements Coming in MongoDB 3.2 (Part 1 of 3) – Introduction. MongoDB. https://www.mongodb.com/blog/post/joins-and-other-aggregation-enhancements-coming-in-mongodb-3-2-part-1-of-3-introduction . 
 
 
 - Usando las colecciones `comments` y `users`, se requiere conocer el correo y contraseña de cada persona que realizó un comentario. Construye un pipeline que genere como resultado estos datos.
