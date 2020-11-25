@@ -40,6 +40,8 @@ Imagen consultada en: Morgan, A. (2015, 30 octubre). Joins and Other Aggregation
 
 - Usando las colecciones `comments` y `users`, se requiere conocer el correo y contraseña de cada persona que realizó un comentario. Construye un pipeline que genere como resultado estos datos.
 
+En este caso es necesario podemos utilizar como **localField:'name'** y **foreignField:'name'** sin embargo el campo nombre es más probable que se repita, por lo que es más conveniente utilizar el campo **email** para ambos.
+
 ## :pushpin: Reto 3. Generación de vistas.
 De igual manera que con MySQL, en MongoDB es posible generar una colección virtual con los resultados de la cosulta, de tal forma que genera una colección con los resultados del *pipeline de una agregación*. Para generar una vista seleccionamos [Save] -> [Create a View] en la pestaña de `Aggregations` y le asignamos un nombre. La salida de la última capa es la vista. **NOTA:** Es necesario utilizar **$project** al final si desamos ver nuestras colecciones y documentos en la pestaña de **Documents**.
 
