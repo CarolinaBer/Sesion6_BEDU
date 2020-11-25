@@ -3,6 +3,7 @@ En MongoDB es posible realizar agregaciones mediante **$group** el cual agrupa l
 
 De tal forma que una **agregación** nos permite aplicar una función a un *campo* de una *colección* en el caso de documentos de la misma forma que un **agrupamiento** lo hace con una *columna* en el caso de *tablas*. En **$group** necesitamos especificat el campo por el cual agrupar y posteriormente indicar uno por uno los acumuladores y a que columna o valor están aplicados. Se sigue el formato:
 
+```json
 {
   $group:
     {
@@ -11,7 +12,7 @@ De tal forma que una **agregación** nos permite aplicar una función a un *camp
       ...
     }
  }
-        
+```        
 https://docs.mongodb.com/manual/reference/operator/aggregation/group/
         
 Podemos pensar que el acumulador en MongoDB funge como las funciones de agrupamiento en el caso de MySQL.Recordando que para ello se hace uso de las variables categóricas al estas contar con un número determinado (finito) de opciones.
