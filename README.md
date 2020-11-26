@@ -49,4 +49,7 @@ De igual manera que con MySQL, en MongoDB es posible generar una colección virt
 
 1. Usando el pipeline generado en el Reto 2, genera la vista correspondiente.
 
+![imagen](imagenes/view_user_comment.png)
+![imagen](imagenes/view_created.png)
+
 2. Para finalizar, elimina todas las vistas que generaste durante esta sesión. En la siguiente sesión, aprenderás a tener tu propio servidor para generar tus propias vistas. 
