@@ -1,0 +1,17 @@
+[{$unwind: {
+  path:"$genres",
+  preserveNullAndEmptyArrays: false
+
+}}, {$unwind: {
+  path: "$countries",
+   preserveNullAndEmptyArrays: false
+
+}}, {$group: {
+  _id: { country: "$countries", genres:"$genres"},
+  total: {
+    $sum: 1
+  }
+}}, {$project: {
+  _id:1,
+  total:1
+}}]
